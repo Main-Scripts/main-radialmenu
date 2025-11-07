@@ -17,8 +17,8 @@ Config.TargetDistance = 3.0
 Config.TargetIcon = 'fas fa-hand-paper'
 
 -- Inventory Settings
-Config.UseOxInventory = true
-Config.EnableQuickUse = true -- Quick use items from radial menu
+Config.UseOxInventory = false
+Config.EnableQuickUse = false -- Quick use items from radial menu
 
 -- Vehicle Settings
 Config.VehicleOptions = {
@@ -37,14 +37,14 @@ Config.PlayerOptions = {
     showMoney = true, -- Show money
     ragdoll = true, -- Enable ragdoll
     surrender = true, -- Hands up animation
-    dance = true, -- Dance menu
-    walkstyles = true, -- Walking styles
+    dance = false, -- Dance menu
+    walkstyles = false, -- Walking styles
 }
 
 -- Job Settings
 Config.JobMenus = {
     police = {
-        enabled = true,
+        enabled = false,
         items = {
             {label = 'Handcuff', action = 'handcuff', icon = 'fas fa-lock'},
             {label = 'Search Player', action = 'search', icon = 'fas fa-search'},
@@ -56,7 +56,7 @@ Config.JobMenus = {
         }
     },
     ambulance = {
-        enabled = true,
+        enabled = false,
         items = {
             {label = 'Heal Player', action = 'heal', icon = 'fas fa-medkit'},
             {label = 'Revive Player', action = 'revive', icon = 'fas fa-heartbeat'},
@@ -65,7 +65,7 @@ Config.JobMenus = {
         }
     },
     mechanic = {
-        enabled = true,
+        enabled = false,
         items = {
             {label = 'Repair Vehicle', action = 'repair', icon = 'fas fa-wrench'},
             {label = 'Impound Vehicle', action = 'impound', icon = 'fas fa-truck'},
@@ -104,7 +104,7 @@ Config.QuickItems = {
 
 -- Emote Wheel Settings
 Config.EmoteWheel = {
-    enabled = true,
+    enabled = false,
     categories = {'dance', 'greetings', 'misc'}
 }
 
